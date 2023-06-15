@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/moazzam/Desktop/syntaxHRMS/testNgBaicBatch16/src/test/java/class02/SoftAssertions.java">
+        <classes>
+            <class name="class01.annotations"></class>
+            <class name="class01.enableDisable"></class>
+            <class name="class02.HardAssertions"></class>
+        </classes>
+    </test>
+</suite>

@@ -8,10 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import utils.CommonMethods;
 
 import java.time.Duration;
 
-public class HardAssertions {
+public class HardAssertions extends CommonMethods {
 //    goto HRMS
 //    enter username
 //    enter wrong password
@@ -21,18 +22,15 @@ public class HardAssertions {
 
 //    i will put in pre conditions for my test case in the Before Method
 
-    public static WebDriver driver;
+
     @BeforeMethod(alwaysRun = true)
     public void OpenBrowserAndNavigate(){
-        driver= new ChromeDriver();
-        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        openBrowserAndNavigateToURL("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login","chrome");
     }
 
 //    post conditions
     @AfterMethod(alwaysRun = true)
-    public void closeBrowser(){
+    public void quitBrowser(){
 //        driver.quit();
     }
 

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utils.CommonMethods;
 
+
 import java.time.Duration;
 
 public class SoftAssertions extends CommonMethods {

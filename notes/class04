@@ -1,0 +1,18 @@
+@Beforesuit---> run before the <suite>
+@Aftersuit-----> run after the </suite>
+
+@BeforeTest------> run before <test>
+@AfterTest-------> run after </test>
+
+
+in order to configure reports for a xml file
+
+--> goto run
+--> edit configurations
+--> select the xml file for which u want to enable the reports
+--> click on lsiteners
+---> click on add button
+---> select email reportable
+--> apply save
+--> apply ok
+
